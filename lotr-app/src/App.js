@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Books from './components/books';
+import Characters from './components/characters';
+import Quotes from './components/quotes';
+import Movies from './components/movies';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className='Info-Card'>
+        <div className='Info'>
+          <h1>Lord of the Rings</h1>
+          <h2>Which LOTR Things Are You?</h2>
+
+          <div>
+            <Books />
+          </div>
+
+          <div>
+            <Characters />
+          </div>
+
+          <div>
+            <Quotes />
+          </div>
+
+          <div>
+            <Movies />
+          </div>
+
+          {/* <button onClick={getBook}>Get Your Book!</button>
+
+          <div>
+            <blockquote>{quote}</blockquote>
+            <cite>- {character}</cite>
+          </div> */}
+
+        </div>
+      </div>
+      
     </div>
   );
 }
